@@ -61,13 +61,13 @@ int main() {
         cout << "Come on you need to finish them once and for all" << endl;
         sleep(2);
         
-        // witcher killed the player
+        // monster killed the witcher
         if (witcherSkill < monsterSkill) {
             witcherAlive = false;
             cout << "Oh no we are doomed. Goodbye strong warrior. You are dead." << endl;
         }
         
-        // player killed the monster
+        // witcher killed the monster
         else {
             if (witcherSkill - monsterSkill > 18) {
                 cout << "MONSTER KILLED!" << endl;
