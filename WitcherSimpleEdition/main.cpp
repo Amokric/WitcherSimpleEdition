@@ -1,7 +1,10 @@
 //
 //  main.cpp
 //  WitcherSimpleEdition
+<<<<<<< HEAD
 //
+=======
+>>>>>>> e9d154531492229f9b37a1d1f827a5770240471a
 //  Copyright © 2018 Aleksandra Mokric. All rights reserved.
 //
 #include <iostream>
@@ -10,17 +13,33 @@
 #include <time.h>
 using namespace std;
 
+<<<<<<< HEAD
 int main() {
     srand(time(NULL)); //should be run exactly once to intialise the PRNG. Do this in Main when the application starts.
     char enter;
     
     }
+=======
+#include <stdlib.h> //standard library
+#include <unistd.h> //header defines miscellaneous symbolic constants and types, and declares miscellaneous functions.
+#include <time.h>
+using namespace std;
+
+>>>>>>> e9d154531492229f9b37a1d1f827a5770240471a
 int createTheMonster() {
     if (rand() % 58 < 10)
         return 11;
     
     else
         return rand() % 10 + 1;
+<<<<<<< HEAD
+=======
+}
+
+int main() {
+    srand(time(NULL)); //should be run exactly once to intialise the PRNG. Do this in Main when the application starts.
+    char enter;
+>>>>>>> e9d154531492229f9b37a1d1f827a5770240471a
     
     // Game stats
     string witcherName = "";
@@ -60,7 +79,11 @@ int createTheMonster() {
         cout << "Come on you need to finish them once and for all" << endl;
         sleep(2);
         
+<<<<<<< HEAD
         // witcher killed the player
+=======
+        // monster killed the witcher
+>>>>>>> e9d154531492229f9b37a1d1f827a5770240471a
         if (witcherSkill < monsterSkill) {
             witcherAlive = false;
             cout << "Oh no we are doomed. Goodbye strong warrior. You are dead." << endl;
@@ -113,3 +136,7 @@ int createTheMonster() {
     cout << "Final score: " << witcherScore << endl << endl;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e9d154531492229f9b37a1d1f827a5770240471a
