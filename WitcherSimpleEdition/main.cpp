@@ -14,13 +14,14 @@ int main() {
     srand(time(NULL)); //should be run exactly once to intialise the PRNG. Do this in Main when the application starts.
     char enter;
     
-    int createTheMonster() {
-        if (rand() % 58 < 10)
-            return 11;
-        
-        else
-            return rand() % 10 + 1;
     }
+int createTheMonster() {
+    if (rand() % 58 < 10)
+        return 11;
+    
+    else
+        return rand() % 10 + 1;
+    
     // Game stats
     string witcherName = "";
     int witcherAlive = true;
